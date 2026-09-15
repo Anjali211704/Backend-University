@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>HTML5 Elements</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>HTML5 Elements Demonstration</h1>
+        <p>This webpage demonstrates different HTML5 elements.</p>
+    </header>
+
+    <nav>
+        <a href="#about">About</a> |
+        <a href="#lists">Lists</a> |
+        <a href="#table">Table</a> |
+        <a href="#form">Form</a>
+    </nav>
+
+    <main>
+
+        <section id="about">
+
+            <h2>Text Formatting</h2>
+
+            <p>
+                This is a <strong>strong</strong> text.
+            </p>
+
+            <p>
+                This is an <em>emphasized</em> text.
+            </p>
+
+            <p>
+                This is <mark>highlighted</mark> text.
+            </p>
+
+            <p>
+                Water formula is H<sub>2</sub>O.
+            </p>
+
+            <p>
+                2<sup>3</sup> = 8
+            </p>
+
+        </section>
+
+
+        <section id="lists">
+
+            <h2>HTML Lists</h2>
+
+            <h3>Unordered List</h3>
+
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ul>
+
+
+            <h3>Ordered List</h3>
+
+            <ol>
+                <li>Learn HTML</li>
+                <li>Learn CSS</li>
+                <li>Learn JavaScript</li>
+            </ol>
+
+
+            <h3>Description List</h3>
+
+            <dl>
+
+                <dt>HTML</dt>
+                <dd>HyperText Markup Language</dd>
+
+                <dt>CSS</dt>
+                <dd>Cascading Style Sheets</dd>
+
+            </dl>
+
+        </section>
+
+
+        <section id="table">
+
+            <h2>Student Table</h2>
+
+            <table border="1">
+
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Course</th>
+                        <th>Semester</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>Anjali</td>
+                        <td>B.Tech CSE</td>
+                        <td>5</td>
+                    </tr>
+
+                    <tr>
+                        <td>Rahul</td>
+                        <td>B.Tech CSE</td>
+                        <td>5</td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+
+        <section id="form">
+
+            <h2>Registration Form</h2>
+
+            <form>
+
+                <label for="name">Name:</label>
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Enter your name"
+                >
+
+                <br><br>
+
+
+                <label for="email">Email:</label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                >
+
+                <br><br>
+
+
+                <label for="password">Password:</label>
+                <input
+                    type="password"
+                    id="password"
+                    name="password"
+                >
+
+                <br><br>
+
+
+                <label for="date">Date of Birth:</label>
+                <input
+                    type="date"
+                    id="date"
+                    name="date"
+                >
+
+                <br><br>
+
+
+                <label>Gender:</label>
+
+                <input
+                    type="radio"
+                    name="gender"
+                    value="female"
+                >
+                Female
+
+                <input
+                    type="radio"
+                    name="gender"
+                    value="male"
+                >
+                Male
+
+                <br><br>
+
+
+                <label for="course">Course:</label>
+
+                <select id="course">
+
+                    <option>B.Tech CSE</option>
+                    <option>B.Tech AI</option>
+                    <option>B.Tech Cybersecurity</option>
+
+                </select>
+
+                <br><br>
+
+
+                <label for="message">Message:</label>
+
+                <br>
+
+                <textarea
+                    id="message"
+                    rows="4"
+                    cols="40"
+                ></textarea>
+
+                <br><br>
+
+
+                <input type="checkbox">
+                I agree to the terms and conditions
+
+                <br><br>
+
+                <button type="submit">
+                    Submit
+                </button>
+
+            </form>
+
+        </section>
+
+
+        <section>
+
+            <h2>Article Element</h2>
+
+            <article>
+
+                <h3>What is HTML5?</h3>
+
+                <p>
+                    HTML5 is the modern version of HTML used
+                    to structure content on webpages.
+                </p>
+
+            </article>
+
+        </section>
+
+
+        <section>
+
+            <h2>Interactive Element</h2>
+
+            <details>
+
+                <summary>
+                    Click to learn more
+                </summary>
+
+                <p>
+                    The details element creates expandable content.
+                </p>
+
+            </details>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <p>
+            Backend Development - Experiment 1
+        </p>
+
+    </footer>
+
+</body>
+
+</html>
