@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>LocalStorage, SessionStorage and JSON</title>
+</head>
+
+<body>
+
+    <h1>LocalStorage, SessionStorage and JSON</h1>
+
+
+    <h2>LocalStorage Example</h2>
+
+    <input
+        type="text"
+        id="localName"
+        placeholder="Enter your name"
+    >
+
+    <button onclick="saveLocal()">
+        Save in LocalStorage
+    </button>
+
+    <button onclick="showLocal()">
+        Show LocalStorage
+    </button>
+
+    <button onclick="removeLocal()">
+        Remove LocalStorage
+    </button>
+
+    <p id="localOutput"></p>
+
+
+    <hr>
+
+
+    <h2>SessionStorage Example</h2>
+
+    <input
+        type="text"
+        id="sessionName"
+        placeholder="Enter your name"
+    >
+
+    <button onclick="saveSession()">
+        Save in SessionStorage
+    </button>
+
+    <button onclick="showSession()">
+        Show SessionStorage
+    </button>
+
+    <button onclick="removeSession()">
+        Remove SessionStorage
+    </button>
+
+    <p id="sessionOutput"></p>
+
+
+    <hr>
+
+
+    <h2>JSON Example</h2>
+
+    <button onclick="showJSON()">
+        Show Student JSON
+    </button>
+
+    <p id="jsonOutput"></p>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
