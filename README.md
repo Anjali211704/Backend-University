@@ -20,3 +20,8 @@ This repository contains my theory exercises and laboratory experiments for the 
 - Task 4 - Sessions, Cookies and Query Strings
 - Task 5 - LocalStorage, SessionStorage and JSON
 - Task 6 - Server-Side Rendering
+
+## Assignments
+
+- Assignment 1 - Build A Notes App (Web Storage tutorial)
+- Assignment 2 - JSONB in postgreSQL and MongoDB
