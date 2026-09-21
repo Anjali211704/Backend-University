@@ -11,6 +11,7 @@ This repository contains my theory exercises and laboratory experiments for the 
 - Experiment 4 - Bootstrap and Tailwind CSS
 - Experiment 12A - Node.js, Express.js, EJS and Nodemon
 - Experiment 12B - Sessions and Cookies
+- Experiment 13 - Express + Mongoose User Management Tutorial 
 
 ## Theory
 
