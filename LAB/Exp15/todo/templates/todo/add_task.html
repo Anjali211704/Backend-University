@@ -1,0 +1,39 @@
+
+{% extends 'todo/base.html' %}
+
+{% block title %}Add Task{% endblock %}
+
+{% block content %}
+
+<div class="card">
+    <h2>Add a New Task</h2>
+
+    {% if error %}
+        <p class="error">{{ error }}</p>
+    {% endif %}
+
+    <form method="post" class="add-form">
+        {% csrf_token %}
+
+        <label for="title">Task Title</label>
+
+        <input
+            type="text"
+            id="title"
+            name="title"
+            placeholder="Enter your task"
+            maxlength="200"
+            required
+        >
+
+        <button type="submit" class="btn primary">
+            Add Task
+        </button>
+    </form>
+
+    <a href="{% url 'task_list' %}" class="back-link">
+        Back to My Tasks
+    </a>
+</div>
+
+{% endblock %}

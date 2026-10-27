@@ -4,7 +4,7 @@ This repository contains my theory exercises and laboratory experiments for the 
 
 ## Laboratory Work
 
-- Experiment 0 - Git Basics
+- Experiment 0 - [Git Basics](./LAB/Exp0/README.md)
 - Experiment 1 - HTML5 Elements
 - Experiment 2 - CSS
 - Experiment 3 - Responsive Web Design
@@ -12,7 +12,7 @@ This repository contains my theory exercises and laboratory experiments for the 
 - Experiment 12A - Node.js, Express.js, EJS and Nodemon
 - Experiment 12B - Sessions and Cookies
 - Experiment 13 - Express + Mongoose User Management Tutorial 
-
+- Experiment 15 - Django To-Do Application
 ## Theory
 
 - Task 1 - Node.js and Express

@@ -1,0 +1,29 @@
+
+<li class="task-item">
+
+    <span class="task-title {% if task.completed %}completed{% endif %}">
+        {{ task.title }}
+    </span>
+
+    <div class="task-actions">
+
+        <form method="post" action="{% url 'toggle_task' task.id %}">
+            {% csrf_token %}
+            <button type="submit" class="btn success">
+                {% if task.completed %}
+                    Undo
+                {% else %}
+                    Complete
+                {% endif %}
+            </button>
+        </form>
+
+        <form method="post" action="{% url 'delete_task' task.id %}">
+            {% csrf_token %}
+            <button type="submit" class="btn danger">
+                Delete
+            </button>
+        </form>
+
+    </div>
+</li>

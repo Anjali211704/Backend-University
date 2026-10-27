@@ -1,0 +1,29 @@
+
+{% extends 'todo/base.html' %}
+
+{% block title %}My Tasks{% endblock %}
+
+{% block content %}
+
+<div class="card">
+    <div class="page-heading">
+        <h2>My To-Do List</h2>
+        <a href="{% url 'add_task' %}" class="btn primary">
+            + Add Task
+        </a>
+    </div>
+
+    <ul class="task-list">
+        {% for task in tasks %}
+
+            {% include 'todo/_task_item.html' %}
+
+        {% empty %}
+            <li class="empty-message">
+                No tasks yet. Add your first task!
+            </li>
+        {% endfor %}
+    </ul>
+</div>
+
+{% endblock %}

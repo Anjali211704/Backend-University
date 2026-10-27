@@ -1,0 +1,143 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f6fb;
+    color: #263249;
+}
+
+.header {
+    background: #263c77;
+    color: white;
+    text-align: center;
+    padding: 28px 15px;
+}
+
+.header h1 {
+    margin: 0 0 8px;
+}
+
+.header p {
+    margin: 0;
+}
+
+.container {
+    max-width: 760px;
+    margin: 35px auto;
+    padding: 0 16px;
+}
+
+.card {
+    background: white;
+    padding: 28px;
+    border-radius: 12px;
+    box-shadow: 0 3px 14px rgba(0, 0, 0, 0.08);
+}
+
+.page-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+}
+
+.btn {
+    display: inline-block;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 14px;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.primary {
+    background: #345bd1;
+}
+
+.success {
+    background: #248a57;
+}
+
+.danger {
+    background: #d34444;
+}
+
+.task-list {
+    list-style: none;
+    padding: 0;
+}
+
+.task-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    padding: 16px 0;
+    border-bottom: 1px solid #e3e6ec;
+}
+
+.task-title {
+    overflow-wrap: anywhere;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: #888;
+}
+
+.task-actions {
+    display: flex;
+    gap: 8px;
+    flex-shrink: 0;
+}
+
+.empty-message {
+    text-align: center;
+    color: #777;
+    padding: 20px;
+}
+
+.add-form {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.add-form input {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.back-link {
+    display: inline-block;
+    margin-top: 20px;
+    color: #345bd1;
+}
+
+.error {
+    color: #c62828;
+}
+
+.footer {
+    text-align: center;
+    color: #777;
+    padding: 20px;
+}
+
+@media (max-width: 550px) {
+    .page-heading, .task-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .task-actions {
+        flex-wrap: wrap;
+    }
+}

@@ -1,0 +1,28 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}To-Do App{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'todo/style.css' %}">
+</head>
+<body>
+
+    <header class="header">
+        <h1>Django To-Do Application</h1>
+        <p>Manage your daily tasks</p>
+    </header>
+
+    <main class="container">
+        {% block content %}
+        {% endblock %}
+    </main>
+
+    <footer class="footer">
+        <p>Backend Development - Experiment 15</p>
+    </footer>
+
+</body>
+</html>
