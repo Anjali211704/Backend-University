@@ -1,0 +1,174 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    background: #f4f6fa;
+    color: #202938;
+}
+
+/* Shared Header */
+
+.site-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px 5%;
+    background: white;
+    border-bottom: 1px solid #d8deea;
+}
+
+.site-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #2457c5;
+    text-decoration: none;
+}
+
+.site-title img {
+    object-fit: contain;
+}
+
+.site-header nav {
+    display: flex;
+    gap: 20px;
+}
+
+.site-header nav a {
+    color: #2457c5;
+    text-decoration: none;
+}
+
+/* Main Content */
+
+.container {
+    width: min(900px, 92%);
+    margin: 35px auto;
+}
+
+.card,
+.panel {
+    padding: 28px;
+    background: white;
+    border: 1px solid #d8deea;
+    border-radius: 12px;
+}
+
+.page-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+/* Task List */
+
+.task-list {
+    padding: 0;
+    list-style: none;
+}
+
+.task-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    padding: 16px 0;
+    border-bottom: 1px solid #e5e9f1;
+}
+
+.task-title {
+    overflow-wrap: anywhere;
+}
+
+.task-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.completed {
+    color: #687386;
+    text-decoration: line-through;
+}
+
+/* Buttons */
+
+button,
+.button,
+.btn {
+    display: inline-block;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 6px;
+    background: #2457c5;
+    color: white;
+    font: inherit;
+    font-size: 14px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+button:hover,
+.button:hover,
+.btn:hover {
+    opacity: 0.9;
+}
+
+button.danger,
+.btn.danger {
+    background: #a62b37;
+}
+
+.btn.success {
+    background: #248a57;
+}
+
+/* Add Task Form */
+
+.add-form,
+.task-form {
+    display: grid;
+    gap: 14px;
+    max-width: 480px;
+}
+
+.add-form input,
+.task-form input {
+    padding: 12px;
+    border: 1px solid #aeb8c8;
+    border-radius: 6px;
+}
+
+/* Footer */
+
+.site-footer {
+    padding: 20px;
+    background: white;
+    border-top: 1px solid #d8deea;
+    text-align: center;
+    color: #687386;
+}
+
+/* Responsive Design */
+
+@media (max-width: 600px) {
+    .site-header,
+    .task-item,
+    .page-heading {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .site-header nav {
+        flex-wrap: wrap;
+    }
+}

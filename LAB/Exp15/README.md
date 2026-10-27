@@ -89,3 +89,41 @@ This experiment demonstrates how Django connects URL routes, views, models, HTML
 
 ## Conclusion
 A Django To-Do application was developed with CRUD operations using SQLite and Django ORM. The experiment also demonstrated static file serving, template inheritance, reusable components and Django administration.
+
+## Additional Implementation — Experiment 15 (Version 2)
+
+### 1. Reusable Templates
+- Created `base.html` as the common page layout.
+- Created separate `header.html` and `footer.html` components.
+- Used `{% extends %}` for template inheritance.
+- Used `{% include %}` to reuse common components.
+- Implemented a page-specific `extra_js` block.
+
+### 2. Static Files
+- Integrated external CSS for styling and responsive design.
+- Added JavaScript for input autofocus.
+- Implemented a task-title character counter.
+- Added a logo using Django's static file system.
+
+### 3. Django Admin Customization
+- Registered the Task model using `TaskAdmin`.
+- Added task search functionality.
+- Implemented completion-status filtering.
+- Enabled editing task completion status directly from the admin list.
+
+### 4. Testing
+Verified CRUD operations, SQLite persistence, CSRF protection, reusable templates, static asset loading, and responsive layout.
+
+### 5. Output Screenshots
+
+**Home Page**
+
+![Home Page](screenshots/home_page.png)
+
+**Add Task Page**
+
+![Add Task](screenshots/add_task.png)
+
+**Django Admin**
+
+![Admin Panel](screenshots/admin_panel.png)

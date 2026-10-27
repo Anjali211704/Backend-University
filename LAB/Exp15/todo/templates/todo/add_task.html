@@ -1,11 +1,12 @@
 
 {% extends 'todo/base.html' %}
 
-{% block title %}Add Task{% endblock %}
+{% block title %}Add Task | Task Tracker{% endblock %}
 
 {% block content %}
 
 <div class="card">
+
     <h2>Add a New Task</h2>
 
     {% if error %}
@@ -26,14 +27,39 @@
             required
         >
 
+        <small id="character-count">0 / 200 characters</small>
+
         <button type="submit" class="btn primary">
             Add Task
         </button>
+
     </form>
 
     <a href="{% url 'task_list' %}" class="back-link">
         Back to My Tasks
     </a>
+
 </div>
+
+{% endblock %}
+
+
+{% block extra_js %}
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    const input = document.getElementById("title");
+    const counter = document.getElementById("character-count");
+
+    if (input && counter) {
+        input.addEventListener("input", function () {
+            counter.textContent =
+                input.value.length + " / 200 characters";
+        });
+    }
+
+});
+</script>
 
 {% endblock %}
